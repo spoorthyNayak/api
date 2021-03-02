@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.print.Book;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,16 +13,16 @@ import java.util.List;
 @RequestMapping("/book")
 
 public class ApiGatewayApplication {
-	  private List<Book> books = new ArrayList<>();
+	  private List<bookmodel> books = new ArrayList<>();
 
 	    @PostMapping
-	    public Book addBook(@RequestBody Book book) {
+	    public bookmodel addBook(@RequestBody bookmodel book) {
 	        books.add(book);
 	        return book;
 	    }
 
 	    @GetMapping
-	    public List<Book> getBooks() {
+	    public List<bookmodel> getBooks() {
 	        return books;
 	    }
 

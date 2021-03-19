@@ -29,5 +29,5 @@ jobs:
       with:
         app-name: 'Spring-boot-appl-book-2021'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9be991546189437c827da62b8d172f5e }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_1d8357a2cc2443eba79e09a2fbe97f60 }}
         package: '${{ github.workspace }}/target/*.jar'
